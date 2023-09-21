@@ -1,0 +1,79 @@
+.modal {
+  &-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #b6c0c9;
+    &.small {
+      font-size: 20px;
+    }
+  }
+  .regNumber {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    @apply text-secondary;
+  }
+  .copyRegNumber {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15px;
+    @apply text-secondary;
+    padding: 5px;
+    background: #d9d9d9;
+    border-radius: 6px;
+    div {
+      padding: 4px 0 0 0;
+    }
+    svg path {
+      fill: #4479a8;
+    }
+    &.copied {
+      background: #00b929;
+      color: #ffffff;
+      svg path {
+        fill: #ffffff;
+      }
+    }
+  }
+  label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #032b3d;
+  }
+  textarea {
+    border: 1px solid rgba(207, 207, 207, 0.41);
+    padding: 15px;
+  }
+  input,
+  select {
+    border: 1px solid rgba(207, 207, 207, 0.41);
+    width: 315px;
+    height: 42px;
+    padding: 0 15px;
+    background-color: white;
+  }
+  .modal-footer button {
+    @apply bg-primary;
+    color: white;
+    border-radius: 4px;
+    width: 191px;
+    height: 60px;
+    display: flex;
+    &[hidden] {
+      display: none;
+    }
+    place-items: center;
+    justify-content: center;
+    &.cancel {
+      background: #b6c0c9;
+    }
+  }
+}
