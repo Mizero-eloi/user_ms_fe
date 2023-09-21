@@ -1,0 +1,26 @@
+#page_not_found {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  color: #032b3d;
+
+  .margin {
+    margin-bottom: 30px;
+
+    &.long {
+      margin-bottom: 60px;
+    }
+  }
+
+  .flex {
+    height: 100vh;
+    margin-bottom: 0px;
+  }
+
+  .back {
+    @apply text-secondary underline font-normal text-[28px] leading-[33px];
+  }
+}
